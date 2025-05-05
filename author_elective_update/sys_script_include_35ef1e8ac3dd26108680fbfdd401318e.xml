@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.NeedItAjax2</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>NeedItAjax2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[// Extend the global.AbstractAjaxProcessor class
+class NeedItAjax2 extends global.AbstractAjaxProcessor {
+  // Define the getEmail function.  
+  // Create a GlideRecord for the User table.
+  // Use the sysparm_userID passed from the client side to retrieve a record from the User table.
+  // Return the email address for the requested record
+  getEmail() {
+    const userRecord = new GlideRecordSecure("sys_user");
+    userRecord.get(this.getParameter('sysparm_user'));
+    return userRecord.email;
+  }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 16:56:12</sys_created_on>
+        <sys_id>35ef1e8ac3dd26108680fbfdd401318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedItAjax2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_35ef1e8ac3dd26108680fbfdd401318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 16:56:12</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>35ef1e8ac3dd26108680fbfdd401318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 16:56:12</sys_created_on>
+        <sys_id>9830aacac3dd26108680fbfdd4013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 16:56:12</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>7f73ddf0fb34e2941feef633beefdcd9</instance_id>
+        <instance_name>dev319122</instance_name>
+        <name>sys_script_include_35ef1e8ac3dd26108680fbfdd401318e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.NeedItAjax2&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;NeedItAjax2&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[// Extend the global.AbstractAjaxProcessor class
+class NeedItAjax2 extends global.AbstractAjaxProcessor {
+  // Define the getEmail function.  
+  // Create a GlideRecord for the User table.
+  // Use the sysparm_userID passed from the client side to retrieve a record from the User table.
+  // Return the email address for the requested record
+  getEmail() {
+    const userRecord = new GlideRecordSecure("sys_user");
+    userRecord.get(this.getParameter('sysparm_user'));
+    return userRecord.email;
+  }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-05 16:56:12&lt;/sys_created_on&gt;&lt;sys_id&gt;35ef1e8ac3dd26108680fbfdd401318e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedItAjax2&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_35ef1e8ac3dd26108680fbfdd401318e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-05 16:56:12&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;35ef1e8ac3dd26108680fbfdd401318e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-05 16:56:12&lt;/sys_created_on&gt;&lt;sys_id&gt;9830aacac3dd26108680fbfdd4013195&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-05 16:56:12&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-504097314</payload_hash>
+        <record_name>NeedItAjax2</record_name>
+        <reverted_from/>
+        <source>1e395beac309ea108680fbfdd40131b0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 16:56:13</sys_created_on>
+        <sys_id>28302ecac3dd26108680fbfdd40131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196a1606e330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 16:56:13</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>2c302ecac7dd2610dff36c71f59b4db8</update_guid>
+        <update_guid_history>2c302ecac7dd2610dff36c71f59b4db8:-504097314</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 17:00:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>ee3c84af54164b8c9e642de71d098a90</sys_id>
+        <sys_metadata>35ef1e8ac3dd26108680fbfdd401318e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedItAjax2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_35ef1e8ac3dd26108680fbfdd401318e</sys_update_name>
+        <sys_update_version display_value="sys_script_include_35ef1e8ac3dd26108680fbfdd401318e">28302ecac3dd26108680fbfdd40131b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 17:00:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
