@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>what would you like the short description to be?</key>
+        <language>en</language>
+        <message>What would you like the short description to be?</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-06 20:31:09</sys_created_on>
+        <sys_id>fefa94aec3dda6108680fbfdd4013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>what would you like the short description to be?</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_message_fefa94aec3dda6108680fbfdd4013186</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-06 20:31:09</sys_updated_on>
+    </sys_ui_message>
+</record_update>
